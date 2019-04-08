@@ -11,18 +11,18 @@ server.use(body({
     uploadDir:'./static/upload'
 }))
 
-server.use(async ctx=>{
-    //文件和post数据
-    console.log(ctx.request)
-})
+// server.use(async ctx=>{
+//     //文件和post数据
+//     console.log(ctx.request)
+// })
 
 server.context.a = 12;
 
 let router = new Router();
 
-// router.get('/user', async ctx=>{
+router.get('/user', async ctx=>{
 
-// });
+});
 
 server.use(router.routes());
 
