@@ -2,7 +2,7 @@ const Koa = require('koa');
 const Router = require('koa-router');
 const static = require('koa-static')
 const body = require('koa-better-body')
-
+const session = require('koa-session')
 
 let server = new Koa();
 server.listen(8000);
