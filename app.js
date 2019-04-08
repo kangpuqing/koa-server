@@ -54,7 +54,7 @@ staticRouter.all(/(\.css)$/i, static('./static',{
 staticRouter.all(/(\.html|\/.htm|\.shtml)$/i, static('./static',{
     maxage:20*86400*100
 }))
-staticRouter.all('', static('./static',{
+staticRouter.all('*', static('./static',{
     maxage:30*86400*100
 }))
 // server.use(static('./static'),{
