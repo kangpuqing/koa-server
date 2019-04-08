@@ -20,9 +20,9 @@ server.context.a = 12;
 
 let router = new Router();
 
-router.get('/user', async ctx=>{
+// router.get('/user', async ctx=>{
 
-});
+// });
 
 server.use(router.routes());
 
